@@ -34,7 +34,7 @@ class _RestFactsClient implements RestFactsClient {
     )
             .compose(
               _dio.options,
-              '/random',
+              '/random?animal_type=cat',
               queryParameters: queryParameters,
               data: _data,
             )

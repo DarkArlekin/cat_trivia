@@ -8,6 +8,6 @@ part 'facts.g.dart';
 abstract class RestFactsClient {
   factory RestFactsClient(Dio dio, {String baseUrl}) = _RestFactsClient;
 
-  @GET('/random')
+  @GET('/random?animal_type=cat')
   Future<CatFactModel> getCatFact();
 } 
