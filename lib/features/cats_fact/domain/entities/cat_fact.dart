@@ -20,7 +20,7 @@ class CatFact extends Equatable {
   final String text;
 
   String get createdDate {
-    return DateFormat('yyyy-MM-dd – kk:mm').format(createdAt);
+    return DateFormat('yyyy-MM-dd – kk:mm').format(createdAt.toLocal());
   }
 
   @override

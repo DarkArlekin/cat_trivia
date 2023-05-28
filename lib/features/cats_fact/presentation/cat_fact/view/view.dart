@@ -14,9 +14,9 @@ class CatsFactScreen extends StatelessWidget {
       title: 'Cat Trivia',
       actions: [HistoryButton()],
       body: Center(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24),
-          child: SingleChildScrollView(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 24),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
